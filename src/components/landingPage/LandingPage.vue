@@ -5,9 +5,32 @@ import Image from './assets/headerImage.png'
 import EuWorkLogo from './assets/partnerLogos/EuWork.png'
 import ListoneGiordano from './assets/partnerLogos/Listone Giordano.png'
 import TecnoGrafica from './assets/partnerLogos/Tecno Grafica.png'
+import NewsSection from './news/News.vue';
+import { type News } from '../../models/news';
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
-
+const news: News[] = [
+    {
+        date: '14.06.2024',
+        title: 'PROMO SUL PARQUET LISTONE GIORDANO',
+        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
+    },
+    {
+        date: '8.06.2024',
+        title: 'NUOVA TIPOLOGIA DI RESINA EUWORK',
+        body: 'Siamo lieti di annunciare il lancio della nostra nuova e innovativa resina autolivellante, progettata per rivoluzionare il mondo dei pavimenti! Se cerchi qualità, estetica e durabilità, Euwork è la scelta giusta per te.'
+    },
+    {
+        date: '4.06.2024',
+        title: 'PROMOZIONE SU RESTAURO',
+        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
+    },
+    {
+        date: '4.06.2024',
+        title: 'PROMOZIONE SU RESTAURO',
+        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
+    }
+]
 </script>
 
 <template>
@@ -25,5 +48,6 @@ const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 
             <img :src="Image" class="size-full object-cover">
         </div>
+        <NewsSection :news="news" />
     </div>
 </template>
