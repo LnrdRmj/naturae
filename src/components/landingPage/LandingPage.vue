@@ -9,6 +9,7 @@ import TecnoGrafica from './assets/partnerLogos/Tecno Grafica.png';
 import NewsSection from './news/News.vue';
 import HowWeWorkSection from './howWeWork/HowWeWork.vue';
 import Collaborate from './collaborate/Collaborate.vue'
+import Footer1 from './footer/Footer.vue'
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 const news: News[] = [
@@ -53,5 +54,6 @@ const news: News[] = [
         <NewsSection :news="news" />
         <HowWeWorkSection />
         <Collaborate />
+        <Footer1 />
     </div>
 </template>
