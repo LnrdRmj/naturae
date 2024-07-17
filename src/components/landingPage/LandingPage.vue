@@ -10,6 +10,7 @@ import NewsSection from './news/News.vue';
 import HowWeWorkSection from './howWeWork/HowWeWork.vue';
 import Collaborate from './collaborate/Collaborate.vue'
 import Footer1 from './footer/Footer.vue'
+import Header from './header/Header.vue';
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 const news: News[] = [
@@ -38,6 +39,7 @@ const news: News[] = [
 
 <template>
     <div class="flex flex-col">
+        <Header class="fixed z-10 top-0" />
         <div class="h-screen relative">
             <div class="flex flex-col absolute text-white bottom-40 left-24 font-semibold text-3xl">
                 <div>
