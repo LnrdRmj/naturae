@@ -1,12 +1,13 @@
 <script setup lang="ts">
 
-import Image from './assets/headerImage.png'
+import Image from './assets/headerImage.png';
 
-import EuWorkLogo from './assets/partnerLogos/EuWork.png'
-import ListoneGiordano from './assets/partnerLogos/Listone Giordano.png'
-import TecnoGrafica from './assets/partnerLogos/Tecno Grafica.png'
-import NewsSection from './news/News.vue';
 import { type News } from '../../models/news';
+import EuWorkLogo from './assets/partnerLogos/EuWork.png';
+import ListoneGiordano from './assets/partnerLogos/Listone Giordano.png';
+import TecnoGrafica from './assets/partnerLogos/Tecno Grafica.png';
+import NewsSection from './news/News.vue';
+import HowWeWorkSection from './howWeWork/HowWeWork.vue';
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 const news: News[] = [
@@ -49,5 +50,6 @@ const news: News[] = [
             <img :src="Image" class="size-full object-cover">
         </div>
         <NewsSection :news="news" />
+        <HowWeWorkSection />
     </div>
 </template>
