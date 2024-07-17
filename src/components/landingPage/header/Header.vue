@@ -1,16 +1,22 @@
 <script setup lang="ts">
 import Logo from '../../icons/Logo.vue'
 
+export type HeaderRoutes = {
+    title: string,
+    onClick: () => void
+}
+
+const props = defineProps<{
+    routes: HeaderRoutes[]
+}>()
+
 </script>
 
 <template>
     <div class="flex justify-between w-full px-24 py-8 bg-black text-white background-header">
         <Logo height="25" />
         <div class="flex gap-16">
-            <div>NEWS</div>
-            <div>CHI SIAMO</div>
-            <div>PARTNER</div>
-            <div>COLLABORA</div>
+            <button v-for="route of routes" @click="route.onClick">{{ route.title }}</button>
         </div>
     </div>
 </template>

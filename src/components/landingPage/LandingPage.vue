@@ -9,7 +9,7 @@ import TecnoGrafica from './assets/partnerLogos/Tecno Grafica.png';
 import NewsSection from './news/News.vue';
 import HowWeWorkSection from './howWeWork/HowWeWork.vue';
 import Collaborate from './collaborate/Collaborate.vue'
-import Footer1 from './footer/Footer.vue'
+import Footer from './footer/Footer.vue'
 import Header from './header/Header.vue';
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
@@ -35,11 +35,31 @@ const news: News[] = [
         body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
     }
 ]
+
+const headerRoute = [
+    {
+        title: 'NEWS',
+        onClick: () => { document.querySelector('#newsSection')?.scrollIntoView({ behavior: 'smooth' }) },
+    },
+    {
+        title: 'CHI SIAMO',
+        onClick: () => { document.querySelector('#howWeWorkSection')?.scrollIntoView({ behavior: 'smooth' }) },
+    },
+    {
+        title: 'PARTNER',
+        onClick: () => { },
+    },
+    {
+        title: 'COLLABORA',
+        onClick: () => { document.querySelector('#collaborateSection')?.scrollIntoView({ behavior: 'smooth' }) },
+    }
+]
+
 </script>
 
 <template>
     <div class="flex flex-col">
-        <Header class="fixed z-10 top-0" />
+        <Header class="fixed z-10 top-0" :routes="headerRoute" />
         <div class="h-screen relative">
             <div class="flex flex-col absolute text-white bottom-40 left-24 font-semibold text-3xl">
                 <div>
@@ -53,9 +73,9 @@ const news: News[] = [
 
             <img :src="Image" class="size-full object-cover">
         </div>
-        <NewsSection :news="news" />
-        <HowWeWorkSection />
-        <Collaborate />
-        <Footer1 />
+        <NewsSection :news="news" id="newsSection" />
+        <HowWeWorkSection id="howWeWorkSection" />
+        <Collaborate id="collaborateSection" />
+        <Footer />
     </div>
 </template>
