@@ -18,11 +18,11 @@ const points = [
 </script>
 
 <template>
-    <div class="flex flex-col px-24 py-12 bg-orange-50">
+    <div class="flex flex-col px-5 sm:px-24 py-12 bg-orange-50">
         <div class="bg-black h-[1px] w-full mb-3"></div>
         <div class="font-semibold">COME LAVORIAMO</div>
 
-        <div class="flex flex-col mt-24 space-y-5">
+        <div class="flex flex-col mt-24 space-y-10 sm:space-y-5">
             <div v-for="point of points" class="flex flex-col">
                 <div class="font-semibold text-3xl mb-3">{{ point.title }}</div>
                 <div class="text-lg font-medium">{{ point.body }}</div>
