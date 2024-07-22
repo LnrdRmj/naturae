@@ -59,7 +59,7 @@ const headerRoute = [
 
 <template>
     <div class="flex flex-col">
-        <TailwindBreakpoints class="fixed top-0 left-0 z-20 text-white text-2xl" />
+        <!-- <TailwindBreakpoints class="fixed top-0 left-0 z-20 text-white text-2xl" /> -->
         <Header class="fixed z-10 top-0" :routes="headerRoute" />
         <div class="h-[100dvh]">
             <div class="absolute size-full flex flex-col items-center sm:items-start">
