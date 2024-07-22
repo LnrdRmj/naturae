@@ -18,7 +18,7 @@ const points = [
 </script>
 
 <template>
-    <div class="flex flex-col px-5 sm:px-24 py-12 bg-orange-50">
+    <div class="flex flex-col px-5 sm:px-24 py-14 bg-orange-50">
         <div class="bg-black h-[1px] w-full mb-3"></div>
         <div class="font-semibold">COME LAVORIAMO</div>
 
