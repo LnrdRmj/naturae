@@ -11,6 +11,7 @@ import Footer from './footer/Footer.vue';
 import Header from './header/Header.vue';
 import HowWeWorkSection from './howWeWork/HowWeWork.vue';
 import NewsSection from './news/News.vue';
+import Partners from './partners/Partners.vue';
 
 const news: News[] = [
     {
@@ -80,6 +81,7 @@ const headerRoute = [
         <NewsSection :news="news" id="newsSection" />
         <DiscoverWorks />
         <HowWeWorkSection id="howWeWorkSection" />
+        <Partners />
         <Collaborate id="collaborateSection" />
         <Footer />
     </div>
