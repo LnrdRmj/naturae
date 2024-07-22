@@ -12,6 +12,7 @@ import Collaborate from './collaborate/Collaborate.vue'
 import Footer from './footer/Footer.vue'
 import Header from './header/Header.vue';
 import TailwindBreakpoints from '../common/tailwindBreakpoints.vue/TailwindBreakpoints.vue';
+import DiscoverWorks from './discoverWorks/DiscoverWorks.vue';
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 const news: News[] = [
@@ -80,6 +81,7 @@ const headerRoute = [
             <img :src="Image" class="size-full object-cover">
         </div>
         <NewsSection :news="news" id="newsSection" />
+        <DiscoverWorks />
         <HowWeWorkSection id="howWeWorkSection" />
         <Collaborate id="collaborateSection" />
         <Footer />
