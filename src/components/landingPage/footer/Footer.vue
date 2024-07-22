@@ -8,7 +8,7 @@ import Logo from '../../icons/Logo.vue'
             <Logo class="w-fit" height="20" />
             <button class="w-fit small-button-light">CONTATTACI</button>
         </div>
-        <div class="flex font-semibold gap-36">
+        <div class="flex flex-col md:flex-row font-semibold gap-5 md:gap-36">
             <div class="flex flex-col text-white mt-8">
                 <div class="text-neutral-400 mb-2"> Social </div>
                 <div class=""> Instagram </div>

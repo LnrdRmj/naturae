@@ -62,11 +62,11 @@ const headerRoute = [
     <div class="flex flex-col">
         <TailwindBreakpoints class="fixed top-0 left-0 z-20 text-white text-2xl" />
         <!-- <Header class="fixed z-10 top-0" :routes="headerRoute" /> -->
-        <div class="h-screen">
+        <div class="h-[100dvh]">
             <div class="absolute size-full flex flex-col items-center sm:items-start">
                 <div class="flex-1"></div>
                 <div class="w-10/12 sm:w-fit flex flex-col text-white font-semibold text-xl sm:text-3xl
-                p-0 sm:pb-40 sm:pl-24">
+                p-0 pb-10 sm:pb-40 sm:pl-24">
                     <div>
                         NATURAE, LEGNO DA VIVERE
                     </div>
@@ -82,6 +82,6 @@ const headerRoute = [
         <NewsSection :news="news" id="newsSection" />
         <HowWeWorkSection id="howWeWorkSection" />
         <Collaborate id="collaborateSection" />
-        <!-- <Footer /> -->
+        <Footer />
     </div>
 </template>
