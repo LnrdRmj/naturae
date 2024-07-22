@@ -81,7 +81,7 @@ const headerRoute = [
         </div>
         <NewsSection :news="news" id="newsSection" />
         <HowWeWorkSection id="howWeWorkSection" />
-        <!-- <Collaborate id="collaborateSection" /> -->
+        <Collaborate id="collaborateSection" />
         <!-- <Footer /> -->
     </div>
 </template>
