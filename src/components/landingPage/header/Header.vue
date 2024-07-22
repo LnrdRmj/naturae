@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BurgerMenu from '../../common/icons/BurgerMenu.vue';
 import Logo from '../../icons/Logo.vue'
 
 export type HeaderRoutes = {
@@ -13,10 +14,13 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="flex justify-between w-full px-24 py-8 bg-black text-white background-header">
+    <div class="flex justify-between items-center w-full px-10 md:px-24 py-8 bg-black text-white background-header">
         <Logo height="25" />
-        <div class="flex gap-16">
+        <div class="hidden lg:flex gap-16">
             <button v-for="route of routes" @click="route.onClick">{{ route.title }}</button>
+        </div>
+        <div class="lg:hidden size-8 flex-center">
+            <BurgerMenu />
         </div>
     </div>
 </template>
