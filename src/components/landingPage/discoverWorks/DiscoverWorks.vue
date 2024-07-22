@@ -4,7 +4,7 @@ import InstagramProfileImage from './assets/instagramProfileImage.png'
 </script>
 
 <template>
-    <div class="bg-neutral-900 flex px-20">
+    <div class="bg-neutral-900 flex px-10 md:px-20">
         <div class="flex flex-col flex-1 pt-20 pb-32">
             <div class="text-white text-4xl font-semibold mb-10">
                 SCOPRI I NOSTRI LAVORI
