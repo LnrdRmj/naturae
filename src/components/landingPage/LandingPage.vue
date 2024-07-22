@@ -11,6 +11,7 @@ import HowWeWorkSection from './howWeWork/HowWeWork.vue';
 import Collaborate from './collaborate/Collaborate.vue'
 import Footer from './footer/Footer.vue'
 import Header from './header/Header.vue';
+import TailwindBreakpoints from '../common/tailwindBreakpoints.vue/TailwindBreakpoints.vue';
 
 const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 const news: News[] = [
@@ -59,6 +60,7 @@ const headerRoute = [
 
 <template>
     <div class="flex flex-col">
+        <TailwindBreakpoints class="absolute top-0 left-0 z-20 text-white text-2xl" />
         <Header class="fixed z-10 top-0" :routes="headerRoute" />
         <div class="h-screen relative">
             <div class="flex flex-col absolute text-white bottom-40 left-24 font-semibold text-3xl">
