@@ -3,18 +3,15 @@
 import Image from './assets/headerImage.png';
 
 import { type News } from '../../models/news';
-import EuWorkLogo from './assets/partnerLogos/EuWork.png';
-import ListoneGiordano from './assets/partnerLogos/Listone Giordano.png';
-import TecnoGrafica from './assets/partnerLogos/Tecno Grafica.png';
-import NewsSection from './news/News.vue';
-import HowWeWorkSection from './howWeWork/HowWeWork.vue';
-import Collaborate from './collaborate/Collaborate.vue'
-import Footer from './footer/Footer.vue'
-import Header from './header/Header.vue';
+import { partnerLogos } from '../../service/partners';
 import TailwindBreakpoints from '../common/tailwindBreakpoints.vue/TailwindBreakpoints.vue';
+import Collaborate from './collaborate/Collaborate.vue';
 import DiscoverWorks from './discoverWorks/DiscoverWorks.vue';
+import Footer from './footer/Footer.vue';
+import Header from './header/Header.vue';
+import HowWeWorkSection from './howWeWork/HowWeWork.vue';
+import NewsSection from './news/News.vue';
 
-const partnerLogos = [ListoneGiordano, TecnoGrafica, EuWorkLogo]
 const news: News[] = [
     {
         date: '14.06.2024',
