@@ -14,7 +14,8 @@
             </div>
         </div>
 
-        <button class="w-fit bg-black text-white py-2 px-5 font-semibold text-base md:text-2xl rounded-lg">
+        <button
+            class="w-fit bg-black text-white py-2 px-5 font-semibold text-base md:text-2xl rounded-lg animated-background-button z-[1]">
             COLLABORA CON NOI
         </button>
 

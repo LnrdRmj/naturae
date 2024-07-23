@@ -20,3 +20,15 @@ html {
 .absolute-center {
   @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
 }
+
+.animated-background-button {
+  @apply relative before:bg-green-700
+    before:w-full before:h-full
+    before:rounded-md
+    before:absolute
+    before:-z-[1]
+    before:top-0 before:left-0
+    before:scale-50 before:opacity-0
+    before:hover:scale-100 before:hover:opacity-100
+    before:transition-[transform,opacity];
+}

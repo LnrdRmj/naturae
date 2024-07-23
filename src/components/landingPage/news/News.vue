@@ -15,7 +15,7 @@ const props = defineProps<{ news: News[] }>()
             <div class="text-2xl font-semibold my-5">{{ singleNews.title }}</div>
             <div>{{ singleNews.body }}</div>
             <div class="flex-1"></div>
-            <button class="w-fit small-button mt-10">
+            <button class="w-fit mt-10 small-button animated-background-button z-[1]">
                 CONTATTACI
             </button>
         </div>

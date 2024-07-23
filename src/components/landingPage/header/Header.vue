@@ -17,7 +17,12 @@ const props = defineProps<{
     <div class="flex justify-between items-center w-full px-10 md:px-24 py-8 bg-black text-white background-header">
         <Logo height="18" />
         <div class="hidden lg:flex gap-16">
-            <button v-for="route of routes" @click="route.onClick">{{ route.title }}</button>
+            <button v-for="route of routes" @click="route.onClick" class="z-20
+                px-2 py-1
+                font-semibold
+                animated-background-button">
+                {{ route.title }}
+            </button>
         </div>
         <div class="lg:hidden flex-center">
             <BurgerMenu height="18" />

@@ -6,7 +6,8 @@ import Logo from '../../icons/Logo.vue'
     <div class="flex flex-col bg-black pt-16 px-10 pb-20">
         <div class="flex justify-between">
             <Logo class="w-fit" height="20" />
-            <button class="w-fit small-button-light">CONTATTACI</button>
+            <button
+                class="w-fit small-button-light animated-background-button z-[1] hover:text-white transition-colors">CONTATTACI</button>
         </div>
         <div class="flex flex-col md:flex-row font-semibold gap-5 md:gap-36">
             <div class="flex flex-col text-white mt-8">
