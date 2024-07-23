@@ -15,7 +15,7 @@ import InstagramProfileImage from './assets/instagramProfileImage.png'
                 e d'interni, capisci i nostri metodi di lavoro e rimani aggiornato su
                 promozioni e offerte esclusive!
             </div>
-            <button class="w-fit flex gap-4 h-12 bg-white py-2 px-5 font-semibold text-2xl rounded-lg 
+            <a href="https://www.instagram.com/naturae_firenze/" target="_blank" class="w-fit flex gap-4 h-12 bg-white py-2 px-5 font-semibold text-2xl rounded-lg 
                 animated-background-button z-[1] before:bg-pink-600 group">
                 <div
                     class="relative size-8 [&>*]:h-8 [&>*]:absolute [&>*]:left-0 [&>*]:top-0 [&>*]:aspect-square [&>*]:transition-opacity">
@@ -24,7 +24,7 @@ import InstagramProfileImage from './assets/instagramProfileImage.png'
                 </div>
                 <div class="flex group-hover:text-white transition-colors"><span>SEGUICI</span> <span
                         class="hidden md:block">&nbsp;SU INSTAGRAM</span></div>
-            </button>
+            </a>
         </div>
         <div class="hidden md:block relative w-1/3">
             <img :src="InstagramProfileImage" class="absolute-center md:h-4/6 lg:h-full w-auto scale-125" />
