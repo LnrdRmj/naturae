@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { linktreeUrl } from '../../../constanst';
 import Logo from '../../icons/Logo.vue'
 </script>
 
@@ -6,17 +7,17 @@ import Logo from '../../icons/Logo.vue'
     <div class="flex flex-col bg-black pt-16 px-10 pb-20">
         <div class="flex justify-between">
             <Logo class="w-fit" height="20" />
-            <button
-                class="w-fit small-button-light animated-background-button z-[1] hover:text-white transition-colors">CONTATTACI</button>
+            <a :href="linktreeUrl" target="_blank"
+                class="w-fit small-button-light animated-background-button z-[1] hover:text-white transition-colors">CONTATTACI</a>
         </div>
         <div class="flex flex-col md:flex-row font-semibold gap-5 md:gap-36">
             <div class="flex flex-col text-white mt-8">
                 <div class="text-neutral-400 mb-2"> Social </div>
-                <div class=""> Instagram </div>
-                <div class=""> Facebook </div>
+                <a href="https://www.instagram.com/naturae_firenze/" target="_blank" class="underline"> Instagram </a>
+                <a href="https://www.facebook.com/naturaefirenze.it" target="_blank" class="underline"> Facebook </a>
             </div>
             <div class="flex flex-col text-white mt-8">
-                <div class="text-neutral-400 mb-2"> Contattaci </div>
+                <a :href="linktreeUrl" target="_blank" class="text-neutral-400 mb-2"> Contattaci </a>
                 <div class=""> info@azienda.it </div>
                 <div class=""> +39 3330068966 </div>
             </div>
