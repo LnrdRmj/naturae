@@ -39,11 +39,11 @@ const news: News[] = [
 const headerRoute = [
     {
         title: 'NEWS',
-        onClick: () => { document.querySelector('#newsSection')?.scrollIntoView({ behavior: 'smooth' }) },
+        onClick: () => { document.querySelector('#newsSection')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) },
     },
     {
         title: 'CHI SIAMO',
-        onClick: () => { document.querySelector('#howWeWorkSection')?.scrollIntoView({ behavior: 'smooth' }) },
+        onClick: () => { document.querySelector('#howWeWorkSection')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) },
     },
     {
         title: 'PARTNER',
@@ -51,7 +51,7 @@ const headerRoute = [
     },
     {
         title: 'COLLABORA',
-        onClick: () => { document.querySelector('#collaborateSection')?.scrollIntoView({ behavior: 'smooth' }) },
+        onClick: () => { document.querySelector('#collaborateSection')?.scrollIntoView({ behavior: 'smooth', block: 'center' }) },
     }
 ]
 
@@ -81,7 +81,7 @@ const headerRoute = [
         <NewsSection :news="news" id="newsSection" />
         <DiscoverWorks />
         <HowWeWorkSection id="howWeWorkSection" />
-        <Partners />
+        <Partners id="partnersSection" />
         <Collaborate id="collaborateSection" />
         <Footer />
     </div>
