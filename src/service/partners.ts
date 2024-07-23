@@ -8,16 +8,21 @@ import TecnoGraficaGrayLogo from "../../src/components/landingPage/assets/partne
 
 export const partnerLogos = [ListoneGiordanoLogo, TecnoGraficaLogo, EuWorkLogo];
 
-export const partnersData = [
-  {
-    name: "Eu Work",
-    logo: EuWorkLogo,
-    grayLogo: EuWorkGrayLogo,
-  },
+export type Partner = {
+  name: string;
+  logo: string;
+  grayLogo: string;
+};
+export const partnersData: Partner[] = [
   {
     name: "Listone Giordano",
     logo: ListoneGiordanoLogo,
     grayLogo: ListoneGiordanoGrayLogo,
+  },
+  {
+    name: "Eu Work",
+    logo: EuWorkLogo,
+    grayLogo: EuWorkGrayLogo,
   },
   {
     name: "Tecno Grafica",
