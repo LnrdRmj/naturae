@@ -12,21 +12,25 @@ export type Partner = {
   name: string;
   logo: string;
   grayLogo: string;
+  website: string;
 };
 export const partnersData: Partner[] = [
   {
     name: "Listone Giordano",
     logo: ListoneGiordanoLogo,
     grayLogo: ListoneGiordanoGrayLogo,
+    website: "https://listonegiordano.com",
   },
   {
     name: "Eu Work",
     logo: EuWorkLogo,
     grayLogo: EuWorkGrayLogo,
+    website: "https://tecnografica.net",
   },
   {
     name: "Tecno Grafica",
     logo: TecnoGraficaLogo,
     grayLogo: TecnoGraficaGrayLogo,
+    website: "https://euwork.it",
   },
 ];
