@@ -31,20 +31,26 @@ function tmp() {
                     {{ route.title }}
                 </button>
             </div>
-            <div class="lg:hidden flex-center z-20" @click="tmp(); visibility = !visibility">
+            <div class="lg:hidden flex-center z-20" @click="visibility = !visibility">
                 <BurgerMenu height="18" />
             </div>
         </div>
-        <div class="lg:hidden
-            text-white 
-            top-full left-0
-            flex flex-col md:flex-row
-            w-full h-screen md:h-fit
-            z-10 py-12 px-8
-            transition-[opacity,transform] duration-[250ms]"
-            :class="visibility ? '-mt-0 opacity-100' : 'opacity-0 -mt-[100%]'">
-            <div class="text-2xl">
-                ciaooo
+        <div class="grid grid-rows-[0fr] transition-[grid-template-rows]" :class="{ 'grid-rows-[1fr]': visibility }">
+            <div class="lg:hidden
+            overflow-hidden
+            text-white
+            flex flex-col
+            w-full md:h-fit
+            z-10
+            transition-[opacity,transform] duration-[250ms]" :class="visibility ? 'opacity-100' : 'opacity-0'">
+                <div class="flex-center flex-col py-12 px-8">
+                    <button v-for="route of routes" @click="route.onClick(); visibility = false" class="z-20
+                        px-2 py-1 h-fit
+                        font-semibold
+                        animated-background-button">
+                        {{ route.title }}
+                    </button>
+                </div>
             </div>
         </div>
     </div>
