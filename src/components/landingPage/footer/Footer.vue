@@ -24,8 +24,8 @@ import Logo from '../../icons/Logo.vue'
             <div class="flex flex-col text-white mt-8">
                 <div class="text-neutral-400 mb-2"> Dati Fiscali </div>
                 <div class=""> P.IVA - 05205530487 </div>
-                <div class=""> Firenze (FI), 50124 </div>
                 <div class=""> Le Essenze srl Via Sant'Onofrio 12/14R </div>
+                <div class=""> Firenze (FI), 50124 </div>
             </div>
         </div>
     </div>
