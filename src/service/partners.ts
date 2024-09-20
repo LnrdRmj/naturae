@@ -25,12 +25,12 @@ export const partnersData: Partner[] = [
     name: "Eu Work",
     logo: EuWorkLogo,
     grayLogo: EuWorkGrayLogo,
-    website: "https://tecnografica.net",
+    website: "https://euwork.it",
   },
   {
     name: "Tecno Grafica",
     logo: TecnoGraficaLogo,
     grayLogo: TecnoGraficaGrayLogo,
-    website: "https://euwork.it",
+    website: "https://tecnografica.net",
   },
 ];
