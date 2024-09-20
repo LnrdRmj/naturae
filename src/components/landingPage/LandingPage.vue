@@ -16,13 +16,13 @@ import Partners from './partners/Partners.vue';
 const news: News[] = [
     {
         date: '15.09.2024',
-        title: 'PROMO SUL PARQUET LISTONE GIORDANO',
-        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
+        title: 'LISTONE GIORDANO - IDEA PROMO AUTUMN',
+        body: 'Siamo lieti di annunciare la promozione "Idea Promo Autumn" di Listone Giordano, valida fino al 31 novembre 2024. Ti aspettiamo nel nostro showroom per scoprire tutti i dettagli e approfittare delle offerte!'
     },
     {
         date: '10.09.2024',
         title: 'SEED - DESIGN ACTION FOR THE FUTURE',
-        body: 'Siamo lieti di annunciare il lancio della nostra nuova e innovativa resina autolivellante, progettata per rivoluzionare il mondo dei pavimenti! Se cerchi qualità, estetica e durabilità, Euwork è la scelta giusta per te.',
+        body: 'Listone Giordano ti invita dal 25 al 28 settembre 2024 a Perugia per un festival sul futuro del pianeta, dove design e scienze si confrontano sul tema degli equilibri. Ti invitiamo a visitare la pagina per saperne di più!',
         button: {
             text: "VISITA IL SITO",
             url: "https://www.listonegiordano.com/fr/festival-seed-2024-2/"
@@ -31,7 +31,7 @@ const news: News[] = [
     {
         date: '01.09.2024',
         title: 'CERSAIE 2024 - SALONE DELLA CERAMICA',
-        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.',
+        body: 'Partecipa alla 41° edizione di Cersaie, dal 23 al 27 settembre a Bologna! Scopri le tendenze e soluzioni innovative nel campo delle superfici e dell\'arredo bagno.Consulta la mappa interattiva per gli espositori dal sito.',
         button: {
             text: "VISITA IL SITO",
             url: "https://www.cersaie.it/it/index.php"
