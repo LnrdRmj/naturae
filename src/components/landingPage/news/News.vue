@@ -16,7 +16,13 @@ const props = defineProps<{ news: News[] }>()
             <div class="text-2xl font-semibold my-5">{{ singleNews.title }}</div>
             <div>{{ singleNews.body }}</div>
             <div class="flex-1"></div>
-            <a :href="linktreeUrl" target="_blank" class="w-fit mt-10 small-button animated-background-button z-[1]">
+
+            <a v-if="singleNews.button != null" :href="singleNews.button.url" target="_blank"
+                class="w-fit mt-10 small-button animated-background-button z-[1]">
+                {{ singleNews.button.text }}
+            </a>
+            <a v-else :href="linktreeUrl" target="_blank"
+                class="w-fit mt-10 small-button animated-background-button z-[1]">
                 CONTATTACI
             </a>
         </div>

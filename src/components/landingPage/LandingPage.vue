@@ -15,25 +15,28 @@ import Partners from './partners/Partners.vue';
 
 const news: News[] = [
     {
-        date: '14.06.2024',
+        date: '15.09.2024',
         title: 'PROMO SUL PARQUET LISTONE GIORDANO',
         body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
     },
     {
-        date: '8.06.2024',
-        title: 'NUOVA TIPOLOGIA DI RESINA EUWORK',
-        body: 'Siamo lieti di annunciare il lancio della nostra nuova e innovativa resina autolivellante, progettata per rivoluzionare il mondo dei pavimenti! Se cerchi qualità, estetica e durabilità, Euwork è la scelta giusta per te.'
+        date: '10.09.2024',
+        title: 'SEED - DESIGN ACTION FOR THE FUTURE',
+        body: 'Siamo lieti di annunciare il lancio della nostra nuova e innovativa resina autolivellante, progettata per rivoluzionare il mondo dei pavimenti! Se cerchi qualità, estetica e durabilità, Euwork è la scelta giusta per te.',
+        button: {
+            text: "VISITA IL SITO",
+            url: "https://www.listonegiordano.com/fr/festival-seed-2024-2/"
+        }
     },
     {
-        date: '4.06.2024',
-        title: 'PROMOZIONE SU RESTAURO',
-        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
+        date: '01.09.2024',
+        title: 'CERSAIE 2024 - SALONE DELLA CERAMICA',
+        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.',
+        button: {
+            text: "VISITA IL SITO",
+            url: "https://www.cersaie.it/it/index.php"
+        }
     },
-    {
-        date: '4.06.2024',
-        title: 'PROMOZIONE SU RESTAURO',
-        body: 'Per tutto il mese di luglio, Listone Giordano ti offre un\'occasione unica per trasformare la tua casa con stile ed eleganza! La nostra rinomata Linea Heritage sarà disponibile con uno sconto eccezionale del 25%.'
-    }
 ]
 
 const headerRoute = [
