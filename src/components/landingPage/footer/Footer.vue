@@ -18,14 +18,14 @@ import Logo from '../../icons/Logo.vue'
             </div>
             <div class="flex flex-col text-white mt-8">
                 <a :href="linktreeUrl" target="_blank" class="text-neutral-400 mb-2"> Contattaci </a>
-                <div class=""> info@azienda.it </div>
-                <div class=""> +39 3330068966 </div>
+                <div class=""> info@naturaefirenze.it </div>
+                <div class=""> +39 055295090 </div>
             </div>
             <div class="flex flex-col text-white mt-8">
                 <div class="text-neutral-400 mb-2"> Dati Fiscali </div>
-                <div class=""> P.IVA - 000000000 </div>
+                <div class=""> P.IVA - 05205530487 </div>
                 <div class=""> Firenze (FI), 50124 </div>
-                <div class=""> Via Sant’Onofrio 12/14R </div>
+                <div class=""> Le Essenze srl Via Sant'Onofrio 12/14R </div>
             </div>
         </div>
     </div>
